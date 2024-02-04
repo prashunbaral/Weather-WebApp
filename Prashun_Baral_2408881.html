@@ -1,0 +1,116 @@
+<!-- Prashun Baral 2408881 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Prashun_Baral_2408881.css"/>
+    <script
+      src="https://kit.fontawesome.com/ecc135c128.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="weather-app-2.js"></script> -->
+    <title>Weather App</title>
+  </head>
+  <body>
+<div class="main">
+    <img src="https://media.discordapp.net/attachments/1190836007050952805/1190836628386762932/logo.png?ex=65a34008&is=6590cb08&hm=686dfe34c81095736de054bf7836c72d6a276ea856ec124b8cfef02853dd9ba3&=&format=webp&quality=lossless&width=582&height=598" class="logo">
+</div>
+
+    <div class="container">
+
+      <div class="history">
+        
+      <!-- Contains the main section -->
+      <div class="container-2">
+        <br />
+        <!-- search bar -->
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Enter City Name"
+            class="search-input"
+          />
+          <!-- search button -->
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- error handling -->
+        <div class="error">
+          <p>Invalid City Name</p>
+        </div>
+        <br />
+        <!-- date -->
+        <div class="date">
+          <p>10th Jan, 2023</p>
+        </div>
+        <!-- consists of the weather icon , current temp, and description -->
+      <div class="weather">
+          <br />
+        <div class="animated-data">
+          <img src="https://drive.google.com/file/d/1SqOChTN85OONQ7lJz1gjlQjT0wLAoGwC/view?usp=drive_link" class="icon" /><br />
+          <h1 class="celcius"></h1>
+          <div class="condition">
+            <h3 class="today-condition"></h3>
+          </div>
+          <br />
+          <!-- h2 and h4 consists of searched city and country resp -->
+          <h2 class="city"></h2>
+          <h4 class="country"></h4>
+        </div>
+          <button  id="pd">View Past Data</button>
+          <!-- consists of humidity, pressure and wind details -->
+          <div class="detail">
+            <!-- consists of humidity icon and sub division 'humidity' consisting of humidity data -->
+            <div class="col">
+              <img src="https://media.discordapp.net/attachments/1190836007050952805/1190836628164456578/humidity.png?ex=65a34008&is=6590cb08&hm=4dd9d69483c9a150822ada83482d3e8b02b4e947442601f3e694f01d623a739a&=&format=webp&quality=lossless&width=376&height=413" alt="" />
+              <div class="humidity">
+                <p class="humidityP"></p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <!-- consists of wind icon and sub division 'wind' consisting of humidity data -->
+            <div class="col">
+              <img src="https://media.discordapp.net/attachments/1190836007050952805/1190836946289823907/wind.png?ex=65a34054&is=6590cb54&hm=470a3dad23e9dab73d01b1f413c6cc309997ea0b77e4f8d6b102610837393f36&=&format=webp&quality=lossless&width=496&height=412" class="windo"/>
+              <div class="wind">
+                <p class="windS"></p>
+                <p>Wind</p>
+              </div>
+            </div>
+            <!-- consists of pressure icon and sub division 'pressure' consisting of humidity data -->
+            <div class="col" id="pressureh">
+              <img src="https://media.discordapp.net/attachments/1190836007050952805/1190836628617433098/pressure.png?ex=65a34008&is=6590cb08&hm=c3d6ce23b62c22fdf209a8219be98e05f014a4a07c9b96226aa0b433a3a84bcf&=&format=webp&quality=lossless&width=537&height=543" alt="" />
+              <div class="pressure">
+                <p class="pressureP"></p>
+                <p>Pressure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      <table border="2px" id="past_table">
+        <th>Day</th>
+        <th>ID</th>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+        <th>Wind Speed</th>
+        <th>Pressure</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Country</th>
+        <th>Condition</th>
+        <th>Icon</th>
+      </table>
+      <div class="err"></div>
+      <button class="back">Go To Current Data</button>
+    <div class="footer">
+      <p>2024 © Prashun Baral 2408881</p>
+    </div>
+    <script src="Prashun_Baral_2408881.js"></script>
+    
+  </body>
+</html>
